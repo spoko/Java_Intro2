@@ -12,7 +12,7 @@ public class MyFirstJava {
         Scanner scanner = new Scanner(System.in);
 
         //a string variable that will store the value entered from the user
-        String firstName = scanner.next();
+        String firstName = scanner.nextLine();
 
         System.out.println("Your name is: " + firstName);
 
@@ -27,7 +27,7 @@ public class MyFirstJava {
         System.out.println("Your name is: " + firstName);
         System.out.println("Your age is: " + userAge);
 
-        if (userAge >= 18){
+        if (userAge >= 18) {
             System.out.println(firstName + " can buy alcohol legally");
         }
 
