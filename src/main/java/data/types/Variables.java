@@ -31,5 +31,6 @@ public class Variables {
         System.out.println("second dog breed is: " + myDog2.getBreed());
 
         myDog.barf();
+
     }
 }
