@@ -13,9 +13,9 @@ public class StringActions {
         System.out.println(testString.length());
 
         String [] stringArray = testString.split(" ");
-        System.out.println( testString  + " has " + stringArray.length + " words.");
-        //Todo quotes inside the string at the begining
-        System.out.println(String.format("%s has %d words.", testString, stringArray.length));
+        System.out.println( "\""+testString + "\"" + " has " + stringArray.length + " words.");
+
+        System.out.println(String.format("\""+"%s" + "\"" +" has " + "\"" + "%d" + "\"" + " words.", testString, stringArray.length));
         //System.out.printf("%s has %d words.", testString, stringArray.length);
     }
 }
