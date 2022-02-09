@@ -9,6 +9,7 @@ public class ArraysDemo {
         int [] numbers = {4, 9, 16, 20, 6};
         String [] cities = {"Sofia", "Plovdiv", "Burgas", "Varna"};
         //System.out.println(cities);
+        //sdfdsf; Todo fix this
 
         System.out.println("Values in array names before filling in: ");
         printNames();
