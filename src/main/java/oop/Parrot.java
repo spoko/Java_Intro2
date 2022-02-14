@@ -14,4 +14,23 @@ public class Parrot extends Pet{
 //    public void talk(){
 //        System.out.println("I can talks");
 //    }
+
+    public boolean isExpensive(Breed breed){
+        if (breed.getBreedName().equals("Ara")){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    //method overload
+    public boolean isExpensive(){
+        if (super.getBreed().getBreedName().equals("Ara")){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+
 }

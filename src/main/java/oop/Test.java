@@ -26,14 +26,17 @@ public class Test {
         parrotAddress.setStreetName("some street");
         parrotAddress.setCity("some city");
         parrotAddress.setPostalCode(12345);
-        Parrot parrot = new Parrot(true, "Poly", 12, new Breed("Ara"), parrotAddress);
+        Parrot parrotAra = new Parrot(true, "Poly", 12, new Breed("Ara"), parrotAddress);
 
-        parrot.setAge(12);
-        parrot.setBreed(new Breed("Ara"));
-        parrot.setHasTail(true);
-        parrot.setName("Poly");
-        parrot.setAddress(parrotAddress);
-        parrot.printData();
+        parrotAra.setAge(12);
+        parrotAra.setBreed(new Breed("Ara"));
+        parrotAra.setHasTail(true);
+        parrotAra.setName("Poly");
+        parrotAra.setAddress(parrotAddress);
+        parrotAra.printData();
+        Breed ara = new Breed("Ara");
+        Breed small = new Breed("Small");
+
 
 //        Parrot parrot2 = new Parrot();
 //        Address parrot2Address = new Address();
@@ -48,9 +51,18 @@ public class Test {
 //        parrot2.setAddress(parrotAddress);
 //        parrot2.printData();
 
-        System.out.println(parrot.isHasTail());
+        System.out.println(parrotAra.isHasTail());
 
         frenchie.run();
-        parrot.run();
+        parrotAra.run();
+
+        System.out.println(parrotAra.isExpensive(ara));
+        System.out.println(parrotAra.isExpensive(small));
+
+        if (parrotAra.isExpensive()){
+            System.out.println("You can`t buy that!");
+        }else {
+            System.out.println("You can buy one!");
+        }
     }
 }
