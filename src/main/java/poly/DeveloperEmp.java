@@ -28,4 +28,20 @@ public class DeveloperEmp extends Employee{
     }
 
 
+    @Override
+    public void supportSomeone() {
+        System.out.println("Read the code provided");
+    }
+
+    @Override
+    public String giveFeedback() {
+        String result = "the code is good!";
+        System.out.println(result);
+        return result;
+    }
+
+//    @Override
+//    public void fillInPresentSheets() {
+//        System.out.println("DevManager: Fill in data");
+//    }
 }

@@ -1,6 +1,6 @@
 package poly;
 
-public abstract class Employee {
+public abstract class Employee implements Seniority {//abstract class is not forced to implement methods from the interface(s)
     private String name;
     private String startDate;
     private double salary;
@@ -60,5 +60,10 @@ public abstract class Employee {
     protected void setBonus(double bonus){
         System.out.println(this.name + " has " + bonus + ".");
         System.out.println("Total is: " + salary + bonus);
+    }
+
+    //method overload
+    protected void setBonus(){
+        System.out.println("Bonus is 1000");
     }
 }
