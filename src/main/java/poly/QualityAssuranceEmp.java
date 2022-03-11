@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class QualityAssuranceEmp extends Employee implements Manager{
     private boolean hasISTQB;
-    public static LinkedList<QualityAssuranceEmp> list;
+    public static LinkedList<QualityAssuranceEmp> list = new LinkedList<>();
 
     public boolean isHasISTQB() {
         return hasISTQB;
