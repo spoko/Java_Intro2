@@ -84,7 +84,8 @@ public class Test {
     }
 
     private static int getRightPart(String value){
-        return Integer.parseInt(value.substring(value.indexOf("=") + 1));
+        String result = value.substring(value.indexOf("=") + 1);
+        return Integer.parseInt(result);
     }
 
 }
